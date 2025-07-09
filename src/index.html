@@ -3,14 +3,25 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Assignment Starter</title>
+  <title>Tables and Forms Assignment</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./stylesheets/main.css">
 </head>
 
 <body>
   <!--  Your HTML goes here-->
-  <h1>Welcome to WEB 1400!!!!!</h1>
+  <h1>Trees</h1>
+  <img src="images/tree.png" alt="tree" usemap="#treemap">
+  <map name="treemap">
+    <area target="_blank" alt="Root" title="Root" href="https://en.wikipedia.org/wiki/Root" coords="80,143,99,144,85,132,94,132" shape="poly">
+    <area target="_blank" alt="Trunk" title="Trunk" href="https://en.wikipedia.org/wiki/Trunk_(botany)" coords="93,133,94,112,86,112,86,134" shape="poly">
+    <area target="_blank" alt="Leaf" title="Leaf" href="https://en.wikipedia.org/wiki/Leaf" coords="148,90,104,80,85,78,75,86,33,91,12,88,10,72,29,55,31,33,52,20,72,12,90,9,123,19,127,36,155,52,166,70" shape="poly">
+  </map>
+  <form method="POST"> 
+    <h2>Newsletter Signup:</h2> <br><br>
+    <label for="name">Name:</label><br>
+    <input id="name" name="name" type="text">
+  </form>
 <script type="module" src="./javascripts/main.js"></script>
 </body>
 </html>
