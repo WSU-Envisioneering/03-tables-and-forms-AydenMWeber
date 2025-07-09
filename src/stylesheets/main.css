@@ -5,5 +5,38 @@ body
 }
 table
 {
-    border: 1px 1px 1px black;
+    display: inline-block;
+    border: 1px dashed black;
+}
+section
+{
+    margin-left: 30em;
+    margin-right: 30em;
+    padding: 3em;
+    padding: 3em;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3em;
+}
+th
+{
+    border: 1px solid black;
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+}
+td
+{
+    border: 1px solid black;
+    background-color: rgb(226, 255, 199);
+}
+.brown
+{
+    background-color: #58400c;
+    border: 1px solid #977939;
+}
+.green
+{
+    background-color: #3b8f19;
+    border: 1px solid #4eaa2a;
 }
