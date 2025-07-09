@@ -17,17 +17,60 @@
     <area target="_blank" alt="Trunk" title="Trunk" href="https://en.wikipedia.org/wiki/Trunk_(botany)" coords="93,133,94,112,86,112,86,134" shape="poly">
     <area target="_blank" alt="Leaf" title="Leaf" href="https://en.wikipedia.org/wiki/Leaf" coords="148,90,104,80,85,78,75,86,33,91,12,88,10,72,29,55,31,33,52,20,72,12,90,9,123,19,127,36,155,52,166,70" shape="poly">
   </map>
-  <form method="POST" action="/classsign"> 
-    <h2>Gardening Class Signup:</h2> <br><br>
+  <form method="GET"> 
+    <h2>Gardening Class Signup:</h2>
     <label for="name">Name:</label><br>
-    <input id="name" name="name" type="text" placeholder="John Doe"><br>
-    <label for="email">Email:</label>
-    <input id="email">
-    <select>
-      <option garden experience
-    </select> id="exp" name="exp" type="dropdown">
-
+    <input id="name" name="name" type="text" placeholder="John Doe" required><br>
+    <label for="email">Email:</label><br>
+    <input id="email" name="email" type="email" placeholder="example1234@google.com" required><br>
+    <label for="exp">Gardening Experience:</label><br>
+    <select id="exp" name="exp">
+      <option value="none">None</option>
+      <option value="beg">Beginner</option>
+      <option value="int">Intermediate</option>
+      <option value="pro">Professional</option>
+      <option value="ex">Expert</option>
+    </select><br>
+    <label for="gender">Gender:</label><br>
+    <label for="male"><input id="male" name="gender" type="radio" checked> Male</label><br>
+    <label for="female"><input id="female" name="gender" type="radio"> Female</label><br>
+    <label for="other"><input id="other" name="gender" type="radio"> Other</label><br>
+    <label for="date">Schedule Your Summer Class Date:</label><br>
+    <input id="date" name="date" type="date" list="validDates">
+    <datalist id="validDates">
+      <option value="2025-07-11"></option>
+      <option value="2025-07-12"></option>
+      <option value="2025-07-18"></option>
+      <option value="2025-07-19"></option>
+      <option value="2025-07-25"></option>
+      <option value="2025-07-26"></option>
+      <option value="2025-08-1"></option>
+      <option value="2025-08-2"></option>
+      <option value="2025-08-8"></option>
+      <option value="2025-08-9"></option>
+    </datalist><br>
+    <label for="extinfo">Any extra information we should know?</label><br>
+    <textarea id="extinfo" name="extinfo"></textarea><br>
+    <input type="submit" value="Submit Form">
+    <input type="reset" value="Reset Form">
   </form>
+  <table>
+    <thead>
+      <tr>
+        <th>Time</th>
+        <th>7/11</th>
+        <th>7/12</th>
+        <th>7/18</th>
+        <th>7/19</th>
+        <th>7/25</th>
+        <th>7/26</th>
+        <th>8/1</th>
+        <th>8/2</th>
+        <th>8/8</th>
+        <th>8/9</th>
+      </tr>
+    </thead>
+  </table>
 <script type="module" src="./javascripts/main.js"></script>
 </body>
 </html>
