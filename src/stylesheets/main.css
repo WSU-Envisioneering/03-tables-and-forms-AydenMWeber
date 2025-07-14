@@ -25,10 +25,10 @@ th
     padding-top: 0.25em;
     padding-bottom: 0.25em;
 }
-td
+tbody
 {
     border: 1px solid black;
-    background-color: rgb(226, 255, 199);
+    background-color: #4eaa2a;
 }
 .brown
 {
@@ -39,4 +39,26 @@ td
 {
     background-color: #3b8f19;
     border: 1px solid #4eaa2a;
+}
+.blue
+{
+    background-color: #19778f;
+    border: 1px solid #2aa2aa;
+}
+.bluedata
+{
+    background-color: #2aa2aa;
+}
+thead
+{
+    border: 5px solid black;
+}
+colgroup
+{
+    padding-bottom: 1rem;
+}
+tfoot
+{
+    padding:1em;
+    caption-side: bottom;
 }
